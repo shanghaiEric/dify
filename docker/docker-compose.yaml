@@ -472,6 +472,8 @@ services:
       interval: 1s
       timeout: 3s
       retries: 30
+    ports:
+      - "5432:5432"  # 添加此行，确保容器端口映射到主机
 
   # The redis cache.
   redis:
